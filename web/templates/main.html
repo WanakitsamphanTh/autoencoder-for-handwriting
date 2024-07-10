@@ -1,0 +1,45 @@
+{% extends 'index.html' %}
+ 
+{% block body %}
+
+<div>
+    <div class = 'white-bg content'>
+        <div style = 'text-align: center;'>
+            <img src = '/web/imgs/logo-kosen.jpg' class = 'content-logo'>
+            <img src = '/web/imgs/logo-tj.png' class = 'content-logo'>
+        </div>
+        <div class = 'header-1'><span>Application of Autoencoders for Handwriting Evaluation</span></div>
+        <span>Thank you for your attention! We are students from National Institute of Technology Sendai College. We have developed this website for presentation in Thailand-Japan Student Science Fair 2023 and to ley everyone try the demo program we have developed. 
+        </span>
+    </div>
+    <div class = 'white-bg content'>
+        <div class = 'header-1'><span>How It Began</span></div>
+        <div class = 'fb-box-wrapper'>
+            <div class = 'fb-box'>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FInternational.NITSC%2Fposts%2Fpfbid02jT4x2YwrWT1QXZoZviYMw9LHCeVSMCv8yPR6jNtRwvhK7yR96RvYAgQpLUXEKx4ul&show_text=true&width=500" width = "50%" scroll = "yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+            <div class = 'fb-box'>
+                <iframe src="https://www.facebook.com/plugins/post.php?href=https%3A%2F%2Fwww.facebook.com%2FInternational.NITSC%2Fposts%2Fpfbid0P5dnKK86qchnAtVFHJPfaR28Z5wGmQYGvD8MkW8HoCV3MLWiu4jRuk9KUXQU5wsSl&show_text=true&width=500" width = "50%" scroll = "yes" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+            </div>
+        </div>
+        <span>Sendai National Institute of Technology have a number of foreign students and interns from many countries, for example, Thailand, Malaysia, Mongolia, France, Finland etc. From our experience, many foreigners have been struggling to learning Japanese in various aspects.
+            So we thought, as our school have many researches on information and technology, why don't we build something to help them learn to write Japanese. 
+        </span>
+    </div>
+    <div class = 'white-bg content'>
+        <div class = 'header-1'><span>The Idea Behind Our Project</span></div>
+        <span><img src="/web/imgs/autoencoder-model.png" class = 'width-80 center'></span>
+        <span>We have studied many fields of the artificial intelligence to bring this project to life. We first have done <p class = 'italic bold-650'>Handwritten Character Recognition Model for Foreigners’ Handwritten Japanese</p> but finally we came up with the idea of using 
+            <p class = 'italic bold-650'>autoencoder</p> to evaluate foreigners' handwriting, which we are very proud to present. The model gets handwriting images as its inputs and encode them into feature space. And again, from those encoded tensors, the model reconstructs the inputs as its outputs. 
+            While being trained, the model must learn how to minimalize losses between inputs and outputs. This is how the autoencoder technique works and what we utilized to evaluate handwriting
+        </span>
+        <span>We studied the difference of reconstruction loss between handwriting by Japanese natives which was carefully and well written and handwriting by foreigners which included incorrect handwriting, improper handwriting and correct handwriting in order to develop a tool 
+            to help study Japanese in the future.</span>
+    </div>
+    <div class = 'white-bg content'>
+        <div class = 'header-1'><span>Our Sincere Gratitude</span></div>
+        <span> We would like to express our sincere attitude to Prof. Keishi Okamoto, who always gave us the warmest advice for this work. As well, we thank every volunteer, every friend, and everyone who has helped us finalize this project.</span>
+    </div>
+</div>
+
+{% endblock %}

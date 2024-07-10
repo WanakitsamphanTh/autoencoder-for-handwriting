@@ -1,0 +1,61 @@
+{% extends 'index.html' %}
+
+{% block head %}
+    <link rel = "stylesheet" href = "/web/css/handwriting.css" type = "text/css"/>
+    <script src = "/web/scripts/handwriting.js" type="text/JavaScript"></script>
+{% endblock %}
+
+{% block body %}
+
+<div>
+    <div class = 'white-bg content'>
+        <div class = 'header-1'><span>Try Our Model</span></div>
+        <span>
+            <div id = "drawing-div">
+                <canvas id = 'drawing-canvas' width = "200px" height = "200px"> Sorry, your browser does not support this website. </canvas>
+                <div class = 'drawing-control'>
+                    <button id = 'clear-button'>Clear</button>
+                    <button id = 'try-button'>Try</button>
+                </div>
+                <div>
+                    <form id = 'select-char'>
+                        <fieldset>
+                            <span><input type = "radio" name = "select-char" id = "a-btn" value = "a"/>
+                            <label for = "a-btn">あ</label></span>
+                            <span><input type = "radio" name = "select-char" id = "nu-btn" value = "nu"/>
+                            <label for = "nu-btn">ぬ</label></span>
+                            <span><input type = "radio" name = "select-char" id = "ti-btn" value = "ti"/>
+                            <label for = "ti-btn">チ</label></span>
+                            <span><input type = "radio" name = "select-char" id = "ke-btn" value = "ke"/>
+                            <label for = "ke-btn">ケ</label></span>
+                            <span><input type = "radio" name = "select-char" id = "yo-btn" value = "yo"/>
+                            <label for = "yo-btn">世</label></span>
+                            <span><input type = "radio" name = "select-char" id = "yorozu-btn" value = "yorozu"/>
+                            <label for = "yorozu-btn">万</label></span>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+            <div class = 'white-bg content'>
+                <div class = 'result'>
+                        <div class = 'result-imgs'>
+                            <div class = 'img-alignment result-1'>
+                                <img id = 'input-img' class = 'modal' />
+                                <img id = 'output-img' class = 'modal'/>
+                            </div>
+                            <div class = 'img-alignment result-2'>
+                                <img id = 'lossmap-img' class = 'modal'/>
+                            </div>
+                        </div>
+                        <span>
+                            <p class = "bold-650">Reconstruction Loss: </p>
+                            <p id = 'result-loss'></p>
+                        </span>
+                </div>
+            </div>
+        </span>
+    </div>
+</div>
+  
+
+{% endblock %}

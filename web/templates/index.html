@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+        <title>For TJ-SSF 2023</title>
+        <link rel = "stylesheet" href = "web/css/main.css" type="text/css"/>
+        <link rel="icon" href="web/imgs/logo-tj.png"/>
+        <script src = "/web/scripts/jquery.js"></script>
+        {% block head %}
+        {% endblock %}
+    </head>
+    <body>
+        
+<div id="myModal" class="mymodal">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="img01">
+</div> 
+        <div class = "wrapper center-screen">
+            {% block body %}
+            {% endblock %}
+        </div>
+        <div class = "navbar">
+            <div class = 'icon'><img src = "web/imgs/logo-tj.png" width = "50px" height = "50px" class="vertical-center "></div>
+            <div id = 'webname' class = 'vertical-center'> <p>Application of Autoencoders for Handwriting Evaluation</p></div>
+            
+            <a href = '../test'>Try our model</a>
+            
+            <a href = '/'>Home</a>
+    </div>
+    </body>
+</html>
+
+
